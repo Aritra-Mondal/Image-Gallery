@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Photo Gallery</h1>
+    </header>
+    <div style="height: 100px"></div>
+    <div class="container">
+      <div class="side_view">
+        <img
+          src="resources/image1.jpeg"
+          alt="image1"
+          onclick="change(this.src)"
+        />
+        <img
+          src="resources/image2.jpeg"
+          alt="image2"
+          onclick="change(this.src)"
+        />
+        <img
+          src="resources/image3.jpeg"
+          alt="image3"
+          onclick="change(this.src)"
+        />
+        <img
+          src="resources/image4.jpeg"
+          alt="image4"
+          onclick="change(this.src)"
+        />
+        <img
+          src="resources/image5.jpeg"
+          alt="image5"
+          onclick="change(this.src)"
+        />
+        <img
+          src="resources/image6.jpeg"
+          alt="image6"
+          onclick="change(this.src)"
+        />
+        <img
+          src="resources/image7.jpeg"
+          alt="image7"
+          onclick="change(this.src)"
+        />
+        <img
+          src="resources/image8.jpeg"
+          alt="image8"
+          onclick="change(this.src)"
+        />
+        <img
+          src="resources/image9.jpeg"
+          alt="image9"
+          onclick="change(this.src)"
+        />
+        <img
+          src="resources/image10.jpeg"
+          alt="image10"
+          onclick="change(this.src)"
+        />
+      </div>
+      <!-- Main view of our gallary -->
+      <div class="main_view">
+        <img src="resources/image1.jpeg" alt="image1" id="main" alt="IMAGE" />
+      </div>
+    </div>
+    <footer>
+      <h1>Thank You For Visiting</h1>
+    </footer>
+    <script type="text/javascript">
+      const change = (src) => {
+        document.getElementById("main").src = src;
+      };
+    </script>
+  </body>
+</html>
